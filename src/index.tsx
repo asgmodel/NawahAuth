@@ -582,10 +582,9 @@ const ChildControlCenter = ({ childId, onBack }: { childId: string, onBack: () =
   }
 
   const handleDelete = () => {
-    if (confirm('هل أنت متأكد من حذف هذه الهوية نهائياً؟ هذا الإجراء لا يمكن التراجع عنه وسيتم تسجيله في البلوكشين.')) {
-        deleteChild(child.id);
+     deleteChild(child.id);
         onBack();
-    }
+ 
   };
 
   const handleAddApp = (app: Omit<LinkedApp, 'id' | 'status' | 'lastAccess'>) => {
